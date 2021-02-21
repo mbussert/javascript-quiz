@@ -1,5 +1,6 @@
 let startQuiz = $("#startbtn");
 let playAgain = $("#playagain");
+let playAgain2 = $("#playagain2");
 let clearScores = $("#clearscoresbtn");
 let resultText = $("#result");
 let scoreDisplay = $("#numcorrect");
@@ -67,10 +68,40 @@ let questions = [
         choice4: "<script></script>",
         answer: 4
     },
+    {
+        question: "What attribute will make a link open in a new window?",
+        choice1: "target=_newTab",
+        choice2: "link=NewWindow",
+        choice3: "target=_blank",
+        choice4: "target=_newWindow",
+        answer: 3
+    },
+    {
+        question: "What HTML element is used to apply CSS style in the HTML document itself?",
+        choice1: "<color>",
+        choice2: "<style>",
+        choice3: "<css>",
+        choice4: "<makepretty>",
+        answer: 2
+    },
 ];
 
 startQuiz.on('click', function () {
     beginQuiz();
+    timer();
+
+});
+
+playAgain.on('click', function() {
+    beginQuiz();
+    secondsLeft = 60;
+    timer();
+
+});
+
+playAgain2.on('click', function () {
+    beginQuiz();
+    secondsLeft = 60;
     timer();
 
 });
@@ -99,6 +130,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > numQuestions) {
         mostRecentScore = score;
         localStorage.setItem("mostRecentScore", score);
+        secondsLeft = 0;
 
         $("#quiz").css("display", "none");
         $("#gameover").css("display", "inline-block");
@@ -213,7 +245,7 @@ function timer() {
 
         timeEl.text(secondsLeft);
 
-        if (secondsLeft <= 0 || availableQuestions.length == 0) {
+        if (secondsLeft <= 0) {
             clearInterval(timerInterval);
             timeEl.text("0");
         }

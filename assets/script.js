@@ -14,8 +14,6 @@ let viewHighScores = $("viewhs");
 let acceptAnswer = false;
 let currentQuestion = {};
 let score = 0;
-let correctBonus = 10;
-let numQuestions = 3;
 let questionCounter = 0;
 let availableQuestions = [];
 let mostRecentScore = localStorage.getItem("mostRecentScore");
@@ -151,7 +149,7 @@ function beginQuiz() {
 }
 
 function getNewQuestion() {
-    if (availableQuestions.length === 0 || questionCounter > numQuestions) {
+    if (availableQuestions.length === 0) {
         mostRecentScore = score;
         localStorage.setItem("mostRecentScore", score);
         secondsLeft = 0;

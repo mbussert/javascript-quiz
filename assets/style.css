@@ -138,6 +138,18 @@
     box-shadow: 0px 0px 5px black;
 }
 
+#startbtn {
+    padding: .25rem;
+    width: 8rem;
+    font-weight: 500;
+    border: solid 1px black;
+}
+
+#startbtn:hover {
+    background-color: orange;
+    box-shadow: 0px 0px 5px black;
+}
+
 .halloffame {
     width: 100%;
     margin: auto;
@@ -182,10 +194,18 @@ form {
     border: solid 1px black;
 }
 
-#clearscoresbtn {
+#playagain2 {
     margin-top: 1rem;
     padding: .25rem;
     width: 8rem;
+    font-weight: 500;
+    border: solid 1px black;
+}
+
+#clearscoresbtn {
+    margin-top: 1rem;
+    padding: 0rem;
+    width: 50px;
     font-weight: 500;
     border: solid 1px black;
 }

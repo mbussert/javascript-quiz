@@ -84,6 +84,30 @@ let questions = [
         choice4: "<makepretty>",
         answer: 2
     },
+    {
+        question: "To access an external sheet, a link is added in which section of the HTML document:",
+        choice1: "<head>",
+        choice2: "<h1>",
+        choice3: "<body>",
+        choice4: "<!DOCTYPE>",
+        answer: 1
+    },
+    {
+        question: "HTML links are defined with the <a> tag and the address is specified by which attribute?",
+        choice1: "HREF",
+        choice2: "LINK",
+        choice3: "TARGET",
+        choice4: "SRC",
+        answer: 4
+    },
+    {
+        question: "Which of the following is/are true about Bootstrap?",
+        choice1: "Free front-end framework",
+        choice2: "Open source product",
+        choice3: "It allows for responsive design",
+        choice4: "All of the above",
+        answer: 4
+    },
 ];
 
 startQuiz.on('click', function () {

@@ -5,7 +5,7 @@ let resultText = $("#result");
 let scoreDisplay = $("#numcorrect");
 let saveScoreBtn = $("#savescorebtn");
 let username = $("#username");
-let secondsLeft = 25;
+let secondsLeft = 60;
 let timeEl = $("#countdown");
 let question = $("#question");
 let choices = Array.from(document.getElementsByClassName("choice-text"));
@@ -202,7 +202,7 @@ function gameOver() {
 }
 
 function timer() {
-    secondsLeft = 25;
+    secondsLeft = 60;
     let timerInterval = setInterval(function () {
         if (secondsLeft > 0) {
             secondsLeft--;

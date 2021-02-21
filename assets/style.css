@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    font-weight: 500;
+    border-bottom: solid 2px black;
+}
+
+.banner h3 {
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: .5vh;
+    font-size: 2vh;
+}
+
+.quizmain {
+    background-color: lightgray;
+    width: 100%;
+    height: 95vh;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizmain h1 {
+    font-size: 2rem;
+}
+
+.quizbody h3 {
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1rem;
+}
+
+.quizbody {
+    width: 50vw;
+    height: 95vh;
+    margin-top: 7vh;
+    text-align: center;
+    display: inline-block;
+}
+
+#startbtn {
+    padding: .25rem;
+    width: 8rem;
+    font-weight: 500;
+}
+
+.quiz {
+    width: 50vw;
+    height: 95vh;
+    margin-top: 3vh;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz h3 {
+    font-weight: 400;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.quiz #result {
+    padding-top: .5vh;
+    margin-top: 1vh;
+    font-size: 1.5rem;
+}
+
+.choice-container {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+}
+
+.prefix {
+    padding: 20px;
+    background-color: navy;
+    color: white;
+    height: 4rem;
+}
+
+.choice-text {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    max-height: 4rem;
+    min-height: 4rem;
+    font-size: .9rem;
+}
+
+.choice-text:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+#username {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#savescorebtn {
+    padding: .25rem;
+    width: 8rem;
+    font-weight: 500;
+    border: solid 1px black;
+}
+
+#savescorebtn:hover {
+    background-color: orange;
+    box-shadow: 0px 0px 5px black;
+}
+
+.halloffame {
+    width: 100%;
+    margin: auto;
+}
+
+#highscoreslist {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#highscoreslist li {
+    list-style:none;
+    padding: 0;
+    margin: auto;
+    text-align: left;
+    justify-content: center;
+    display: block;
+}
+
+.gameover {
+    width: 50vw;
+    height: 95vh;
+    margin-top: 3vh;
+    text-align: center;
+    display: none;
+    line-height: 3rem;
+}
+
+form {
+    line-height: 2rem;
+    padding: 5px;
+    margin: 0;
+}
+
+#playagain {
+    margin-top: 1rem;
+    padding: .25rem;
+    width: 8rem;
+    font-weight: 500;
+    border: solid 1px black;
+}
+
+#clearscoresbtn {
+    margin-top: 1rem;
+    padding: .25rem;
+    width: 8rem;
+    font-weight: 500;
+    border: solid 1px black;
+}
+
+#clearscoresbtn:hover {
+    background-color: orange;
+    box-shadow: 0px 0px 5px black;
+}
+
+#playagain:hover {
+    background-color: orange;
+    box-shadow: 0px 0px 5px black;
+}
+
+#submitusername {
+    margin-top: 2rem;
+    padding: .25rem;
+    width: 8rem;
+    font-weight: 500;
+}
+
+#clearscoresbtn {
+    margin-top: 2rem;
+    padding: .25rem;
+    width: 8rem;
+    font-weight: 500;
+}
+
+.highscores {
+    width: 50vw;
+    height: 95vh;
+    margin-top: 3vh;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    line-height: 2.5rem;
+    align-items: center;
+}
+
+.halloffame {
+    text-align: center;
+    margin-top: 2rem;
+    width: 50%;
+    align-items: center;
+    display: block;
+}

@@ -269,7 +269,11 @@ function timer() {
 
         if (secondsLeft <= 0) {
             clearInterval(timerInterval);
+            mostRecentScore = score;
+            scoreDisplay.text(score);
             timeEl.text("0");
+            $("#quiz").css("display", "none");
+            $("#gameover").css("display", "inline-block");
         }
     }, 1000);
 }

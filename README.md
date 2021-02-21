@@ -3,7 +3,7 @@
 ### GitHub: [mbussert](https://github.com/mbussert) | Email: mbussert@gmail.com
 
 ## Links:
-Deployed application: https://mbussert.github.io/password-generator/  
+Deployed application: https://mbussert.github.io/javascript-quiz/  
 GitHub Repository: https://github.com/mbussert/javascript-quiz
 
 ## Description:

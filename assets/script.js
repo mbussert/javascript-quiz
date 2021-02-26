@@ -96,7 +96,7 @@ let questions = [
         choice2: "LINK",
         choice3: "TARGET",
         choice4: "SRC",
-        answer: 4
+        answer: 1
     },
     {
         question: "Which of the following is/are true about Bootstrap?",
